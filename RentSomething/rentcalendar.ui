@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RentCalendarClass</class>
+ <widget class="QMainWindow" name="RentCalendarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rent Something</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="5">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>328</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="startDateL">
+        <property name="minimumSize">
+         <size>
+          <width>71</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>71</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Дата начала</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="itemDirB">
+          <property name="minimumSize">
+           <size>
+            <width>91</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Справочник 
+наименований</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="statusDirB">
+          <property name="minimumSize">
+           <size>
+            <width>91</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Справочник 
+состояний</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QDateEdit" name="startDate">
+          <property name="minimumSize">
+           <size>
+            <width>71</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>71</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="wrapping">
+           <bool>false</bool>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="accelerated">
+           <bool>false</bool>
+          </property>
+          <property name="showGroupSeparator" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="displayFormat">
+           <string>dd/MM/yyyy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="prevDayB">
+          <property name="minimumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="dayL">
+          <property name="minimumSize">
+           <size>
+            <width>31</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>31</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>День</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="nextDayB">
+          <property name="minimumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>-&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="prevMonthB">
+          <property name="minimumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="monthL">
+          <property name="minimumSize">
+           <size>
+            <width>31</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>31</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Месяц</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="nextMonthB">
+          <property name="minimumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>21</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>-&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="5">
+     <widget class="QTableWidget" name="calendar">
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>30</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Наименование</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Номер</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Цена</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="itemName">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Наименование товара</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="rentDate">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Дата выдачи</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="status">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Статус</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="FIO">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Ф.И.О</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="okB">
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>startDate</tabstop>
+  <tabstop>prevDayB</tabstop>
+  <tabstop>nextDayB</tabstop>
+  <tabstop>prevMonthB</tabstop>
+  <tabstop>nextMonthB</tabstop>
+  <tabstop>itemDirB</tabstop>
+  <tabstop>statusDirB</tabstop>
+  <tabstop>calendar</tabstop>
+  <tabstop>itemName</tabstop>
+  <tabstop>rentDate</tabstop>
+  <tabstop>status</tabstop>
+  <tabstop>FIO</tabstop>
+  <tabstop>okB</tabstop>
+ </tabstops>
+ <resources>
+  <include location="rentcalendar.qrc"/>
+ </resources>
+ <connections/>
+</ui>
